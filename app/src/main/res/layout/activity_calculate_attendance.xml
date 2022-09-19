@@ -39,7 +39,7 @@
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="number"
-        android:text="eg: 12"
+        android:text="eg: 15"
         android:textColor="#8C8989"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
