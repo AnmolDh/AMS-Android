@@ -50,7 +50,7 @@
         android:id="@+id/homeFooter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="unstable v1"
+        android:text="v1.0.0-beta"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/homebg"
