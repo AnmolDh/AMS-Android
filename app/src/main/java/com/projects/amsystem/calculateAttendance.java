@@ -35,7 +35,21 @@ public class calculateAttendance extends AppCompatActivity {
                 float ca = Float.parseFloat(classesAttendedInput.getText().toString());
 
                 calculatedValues.setText("Your Attendance: " + ((ca/tc)*100) + "%");
+                closeKeyBoard();
             }
         });
+    }
+
+    private void closeKeyBoard(){
+        View view = this.getCurrentFocus();
+        if (view != null){
+            InputMethodManager imm = null;
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+                imm = (InputMethodManager)
+                        getSystemService(Context.INPUT_METHOD_SERVICE);
+            }
+            assert imm != null;
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 }
